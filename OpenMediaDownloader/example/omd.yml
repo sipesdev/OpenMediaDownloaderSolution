@@ -1,0 +1,20 @@
+# Name of the preset to use by default
+default_preset: 'default'
+
+# Create presets to be used here, they can be called upon by -P <name> upon execution
+presets:
+  # Will download the highest quality video or audio and re-encode it as mp3 or mp4 respectively
+  -
+    name: 'default'
+    audio_args: '-f bestaudio --extract-audio --audio-format mp3'
+    video_args: '-f bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'
+  # Example preset downloads highest available quality without re-encoding
+  -
+    name: 'highest'
+    audio_args: '-f bestaudio'
+    video_args: '-f bestvideo'
+
+# Do not modify configuration version
+version: 0
+
+# Congrats, you found an unused feature

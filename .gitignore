@@ -1,0 +1,7 @@
+lib/
+bin/
+OpenMediaDownloader/bin/
+OpenMediaDownloader/obj/
+Logger/bin/
+Logger/obj/
+.vscode/

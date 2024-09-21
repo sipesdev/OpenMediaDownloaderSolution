@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>omd</AssemblyName>
+    <Version>0.1.0</Version>
+    <Authors>XRipper</Authors>
+    <Description>Easy to use CLI program to download media from various mainstream websites. Uses YT-DLP and ffmpeg as a backend.</Description>
+
+    <SelfContained>true</SelfContained>
+    <ImplicitUsings>false</ImplicitUsings>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishTrimmed>true</PublishTrimmed>
+    <Nullable>enable</Nullable>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="../lib/**" Link="lib/%(FileName)%(Extension)">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <!-- Library is an old project of mine that I'm using for debugging, it will later be removed and/or replaced -->
+  <ItemGroup>
+    <ProjectReference Include="../Logger/Logger.csproj" Version="1.0.0"/>
+  </ItemGroup>
+
+  <!-- TODO: Implement -->
+  <ItemGroup>
+    <PackageReference Include="YamlDotnet" Version="11.2.1"/>
+  </ItemGroup>
+</Project>

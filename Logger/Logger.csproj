@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <Authors>XRipper</Authors>
+    <Description>Quickly put together implementation of a logging library. Replace this soon.</Description>
+  </PropertyGroup>
+
+</Project>
